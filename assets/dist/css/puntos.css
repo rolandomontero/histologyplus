@@ -1,0 +1,117 @@
+
+/**
+* Formulario inscripción
+**/
+
+.contenido {
+    position: fixed;
+    margin-top: 32px;
+    padding: 1px;
+    box-sizing: content-box;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+}
+
+.contenido div.inicio {
+    margin-top: 90px;
+    color: white;
+    text-align: center;
+}
+
+.contenido div.final {
+    margin-bottom: 100px;
+
+}
+
+.contenido div.puntaje {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    margin-left: 25%;
+    background-color: #ffffff;
+    /* width: 60%; */
+    border-radius: 16px;
+    border: 3px solid #fb5104;
+    padding: 20px 20px;
+    box-shadow: 0 10px 25px rgb(92 99 105 / 55%);
+    flex-direction: column;
+}
+
+a:link,
+a:visited  {
+    color: black;
+}
+
+.listado {
+    position: fixed;
+    width: 70%;  
+    background: #fff;
+    /* display: contents; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 12px;
+   
+    overflow-y: auto; /* Agrega un scroll vertical si el contenido excede el tamaño de la caja */
+    max-height: 60%;
+    padding-left: 2%;
+    border: 2px solid  #fb5104;
+}
+
+.history {
+    justify-content: center;
+    display: contents;
+    margin-right: 30%;
+    padding-right: 12px;
+    /* margin-right: 12px; */
+}
+
+.history ul {
+  height: 80%;
+  display: inline-flex;
+  width: 98%;
+  flex-direction: column;
+  list-style: none; /* Elimina los puntos de lista predeterminados */
+  padding: 0px 12px; /* Elimina el espacio de relleno predeterminado del ul */
+  }
+  
+  .history li {
+    display: flex; /* Para que los elementos "fecha" y "ptos" se alineen horizontalmente */
+    justify-content: space-between; /* Para que los elementos se distribuyan en el espacio disponible */
+    border: 1px solid #ccc; /* Agrega un borde inferior para separar los elementos de la lista */
+    padding: 10px; /* Espacio de relleno entre los elementos li */
+    border-radius: 5px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+  }
+
+  .history li:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+
+  .history li:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .fecha {
+    flex: 1; /* Para que la clase "fecha" ocupe el espacio disponible */
+    font-size: 1em;
+  }
+  
+  .ptos {
+    flex: 1; /* Para que la clase "ptos" ocupe el espacio disponible */
+    text-align: right; /* Alinea el texto a la derecha */
+    font-weight: bold;
+  }
+
+  .cobra {
+    color: red;
+  }
+
+  .premio {
+    display: none;
+  }
+

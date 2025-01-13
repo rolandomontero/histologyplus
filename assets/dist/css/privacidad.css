@@ -1,0 +1,40 @@
+/* Colors */
+.bg-burgundy {
+    background-color: #b13d2c;
+}
+
+.bg-cream {
+    background-color: #e8d9c7;
+}
+
+.text-orange {
+    color: #c2803c;
+}
+
+.text-gray {
+    color: #000000;
+}
+
+.bg-gray {
+    background-color: #7c7874;
+}
+
+/* Header Image Styling */
+header img {
+    border-radius: 10px;
+}
+
+/* Section Heading Styling */
+h2 {
+    border-bottom: 2px solid #da9b7a;
+    padding-bottom: 0.5rem;
+}
+
+/* Section Styling */
+section {
+    padding: 1.5rem;
+    border-left: 5px solid #f48699;
+    background-color: #e1bb9e;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
