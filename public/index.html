@@ -1,93 +1,262 @@
 <!DOCTYPE html>
 <html lang="es-ES" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Histology Plus" />
+    <meta
+      property="og:description"
+      content="Una App para estudiar Histología."
+    />
+    <meta property="og:url" content="https://histologyplus.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/brand/logo-432.png" />
+    <meta property="og:site_name" content="Wampus Club" />
+    <link href="assets/brand/logo-432.png" type="image/png" rel="icon" />
+    <link
+      rel="shortcut icon"
+      href="./favicon.ico"
+      type="image/vnd.microsoft.icon"
+    />
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        <meta property="og:title" content="Histology+" />
-        <meta property="og:description" content="Dashboard Histology+" />
-        <meta property="og:url" content="https://histologyplus.mclautaro.cl/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image"
-            content="https://histologyplus.mclautaro.cl/img/logo-432.png" />
-        <meta property="og:site_name" content="Histologyplus" />
-        <link href="../img/logo-432.png" type="image/png" rel="icon" />
-        <link rel="shortcut icon" href="./favicon.ico"
-            type="image/vnd.microsoft.icon">
+    <title>Histology Plus</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/dist/css/main.css" />
+  </head>
+  <body>
+    <!-- Botón flotante -->
+    <button id="btnTop" class="btn btn-light"><i class="bi bi-caret-up-fill"></i></button>
+    <!-- Header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg fixed-top bg-burgundy"
+        aria-label="Main navigation"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler p-0 border-0 bi bi-list fs-1"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navHistology"
+            id="navbarSideCollapse"
+            aria-label="Toggle navigation"
+          ></button>
+          <a class="navbar-brand acme-regular inicio" href="#">
+            <img
+              src="./assets/brand/eicon.png"
+              alt="Ícono de Histología"
+              class="me-3"
+              width="48"
+              height="48"
+            />
+            Histology Plus
+          </a>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="navHistology"
+            aria-labelledby="offcanvasNavbar2Label"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#informacion">Información</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="privacidad.html">Privacidad</a>
+                </li>
+              </ul>
+              <ul class="list-unstyled d-flex justify-content-end">
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#">
+                    <i class="bi bi-whatsapp fs-4"></i>
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#">
+                    <i class="bi bi-instagram fs-4"></i>
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#">
+                    <i class="bi bi-facebook fs-4"></i>
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="link-body-emphasis" href="#">
+                    <i class="bi bi-cart fs-4"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <meta name="description" content="Histology+">
-        <script type="module">
-          // Import the functions you need from the SDKs you need
-          import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-          // TODO: Add SDKs for Firebase products that you want to use
-          // https://firebase.google.com/docs/web/setup#available-libraries
-        
-          // Your web app's Firebase configuration
-          const firebaseConfig = {
-            apiKey: "AIzaSyD022xetqRTwiORZt-N70yohd2lM1KwXis",
-            authDomain: "histologyplus-b3d92.firebaseapp.com",
-            projectId: "histologyplus-b3d92",
-            storageBucket: "histologyplus-b3d92.firebasestorage.app",
-            messagingSenderId: "889881501110",
-            appId: "1:889881501110:web:8e08436f910d2b9d563517"
-          };
-        
-          // Initialize Firebase
-          const app = initializeApp(firebaseConfig);
-        </script>
+    <!-- Main Content -->
+    <main class="bg-cream">
+      <!-- Información General -->
+      <section class="mb-5 info">
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row align-items-center g-5 py-5">
+            <div class="col-lg-6" data-aos="fade-right">
+              <h1 class="display-3 inicio acme-regular">
+                Aprende del mundo de las células
+              </h1>
+              <p class="lead">
+                <b class="acme-regular display-6">Histology Plus</b>, te ayuda a
+                comprender en un sorprendente viaje hacia el mundo microscópico
+                de los téjidos histológicos.
+              </p>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
-        <script src="./js/dashboard.js"></script>
-        <script>
-           window.localStorage.setItem('url', window.location.href);
-        </script>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a
+                  href="https://play.google.com/store/apps/details?id=cl.mclautaro.histology"
+                  class="btn btn-light btn-lg px-4 me-md-2"
+                  ><i class="bi bi-google-play me-md-2 text-dark"></i> Google
+                  Play</a
+                >
+                <a
+                  href="https://apps.apple.com/cl/app/histology-plus/id6739782209"
+                  class="btn btn-light btn-lg px-4"
+                >
+                  <i class="bi bi-apple me-md-2 text-dark"></i>
+                  Apple Store</a
+                >
+              </div>
+            </div>
+            <div
+              class="col-10 col-sm-8 col-lg-6 d-flex justify-content-center"
+              data-aos="fade-up"
+            >
+              <img
+                src="assets/images/iPhone02.png"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Histology Plus"
+                loading="lazy"
+                width="60%"
+                height="60%"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <!-- Información que Recopilamos -->
+        <section class="mb-5 panel" id="información">
+          <h2 class="text-orange titulo">Información que Recopilamos</h2>
+          <ul class="text-gray">
+            <li>
+              Información personal proporcionada por el usuario, como nombre y
+              correo electrónico.
+            </li>
+            <li>
+              Información técnica sobre el dispositivo utilizado para acceder a
+              la aplicación.
+            </li>
+            <li>
+              Datos de actividad dentro de la aplicación para mejorar la
+              experiencia del usuario.
+            </li>
+          </ul>
+        </section>
 
-        <title>Histology+</title>
+        <!-- Uso de la Información -->
+        <section class="mb-5 panel" id="contacto">
+          <h2 class="text-orange">Uso de la Información</h2>
+          <p class="text-gray">
+            Utilizamos la información recopilada para mejorar nuestros
+            servicios, personalizar la experiencia del usuario y proporcionar
+            soporte técnico cuando sea necesario.
+          </p>
+        </section>
 
-        <!-- Bootstrap core CSS -->
-        <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom styles for this template -->
-        <link href="assets/dist/css/signin.css" rel="stylesheet">
-        <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
+        <!-- Protección de la Información -->
+        <section class="mb-5">
+          <h2 class="text-orange">Protección de la Información</h2>
+          <p class="text-gray">
+            Tomamos medidas de seguridad adecuadas para proteger su información
+            personal contra accesos no autorizados o divulgación.
+          </p>
+        </section>
 
-    </head>
+        <!-- Derechos de los Usuarios -->
+        <section class="mb-5">
+          <h2 class="text-orange">Derechos de los Usuarios</h2>
+          <ul class="text-gray">
+            <li>
+              Derecho a acceder, rectificar o eliminar sus datos personales.
+            </li>
+            <li>
+              Derecho a restringir o oponerse al procesamiento de sus datos.
+            </li>
+            <li>Derecho a la portabilidad de sus datos.</li>
+          </ul>
+        </section>
 
-    <body class="text-center">
-        <form class="form-signin" action="./dashboard/">
-            <img class="mb-4" src="./img/logo-432.png" alt width="180"
-                height="180">
-            <h1 class="h3 mb-3 font-weight-normal">Ingreso de Usuario</h1>
-            <label for="inputEmail" class="sr-only">email</label>
-            <input type="email" id="inputEmail" class="form-control"
-                placeholder="email" required autofocus>
-            <label for="inputPassword" class="sr-only">Contraseña</label>
-            <input type="password" id="inputPassword" class="form-control"
-                placeholder="Contraseña" required>
+        <!-- Contacto -->
+        <section class="mb-5">
+          <h2 class="text-orange">Contacto</h2>
+          <p class="text-gray">
+            Si tiene alguna pregunta sobre nuestra política de privacidad, puede
+            contactarnos a través de
+            <a href="mailto:info@histologyplus.com" class="link-body-emphasis"
+              >info@histologyplus.com</a
+            >.
+          </p>
+        </section>
+      </div>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
-        </form>
-    </body>
+      <!-- Footer -->
+      <footer class="bg-gray text-white py-3 text-center">
+        <p>&copy; 2024 Histology+. Todos los derechos reservados.</p>
+      </footer>
+    </main>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+    <script>
+      AOS.init({
+        easing: "ease-out-back",
+        duration: 3000,
+      });
+    </script>
+    <script>
+      window.onload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
+  </body>
 </html>
