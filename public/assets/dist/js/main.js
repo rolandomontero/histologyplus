@@ -35,7 +35,7 @@ function imgResize() {
     imgHistology.src = "./assets/images/CallToActionMobile.png";
     imgHistology.style.width = "100%";
     imgAprende.src = "./assets/images/ipad.png";
-    imgAprende.style.width = "100%";
+    //imgAprende.style.width = "100%";
   } else {
     imgHistology.src = "./assets/images/iPhone02.png";
     imgAprende.src = "./assets/images/iPhone03.png";

@@ -28,8 +28,6 @@
 
 
 }
-
-
 /* Colors */
 .bg-burgundy {
   background-position: top center, bottom center;
@@ -51,6 +49,11 @@
   color: #c2803c;
 }
 
+.text-orange {
+  color: #c2803c;
+}
+
+
 .text-gray {
   color: #000000;
   font-family: Montserrat;
@@ -60,6 +63,8 @@
 .bg-gray {
   background-color: #7c7874;
 }
+
+
 
 /* Header Image Styling */
 header img {
@@ -74,7 +79,7 @@ header img {
 
 .b-divider {
   width: 100%;
-  height: 6rem;
+  height: 5rem;
 }
 
 .img-banner {
@@ -84,12 +89,12 @@ header img {
 }
 
 .content-section {
-  margin-top: 8rem; /* Ajusta este valor según la altura de tu navbar */
+  margin-top: 2rem; /* Ajusta este valor según la altura de tu navbar */
 }
 
 .lead {
   font-family: Montserrat;
-  color: antiquewhite;
+  color: #fff9f2;
 }
 
 /* Section Heading Styling */
@@ -104,19 +109,14 @@ header img {
 .panel {
   padding: 1.5rem;
   border-left: 12px solid #f48699;
-  background-color: #e1bb9e;
+  background-color: #f3c8a7;
   margin-bottom: 2rem;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 .bi {
   color: #f1f1f1;
   font-size: 1rem;
-}
-
-.icon {
-  font-size: 2.5rem;
-  color: #7d466aff;
 }
 
  .vistaprevia {

@@ -125,18 +125,16 @@
     <div class="container">
       <!-- Hero -->
       <section class="mb-5" id="hero">
-        <h2 class="text-orange"></h2>
         <div class="container">
           <div class="b-divider"></div>
           <h2 class="text-orange acme-regular titulo">
             Aprende Histología de manera intuitiva y visual</h2>
-          <div class="container col-xxl-8 px-4 py-5 col-10">
-            <div class="row flex-lg-row align-items-center g-1">
-             
-              <div class="col-3 col-sm-12 col-lg-6 d-flex justify-content-center" data-aos="fade-up">
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row align-items-center g-5 ">
+              <div class="col-12 col-sm-12 col-lg-5 d-flex justify-content-center" data-aos="fade-up">
                 <img id="imgAprende" class="d-block mx-lg-auto img-fluid vistaprevia" alt="Aprende Histology Plus" />
               </div>
-           
+
               <div class="col-lg-6 px-6">
 
                 <p class="text-gray">
@@ -153,14 +151,9 @@
       </section>
 
       <!-- ¿Qué ofrecemos? -->
-      <section class="mb-5 panel" id="wcd">
-        
+      <section class="mb-5 panel" id="wcd">       
         <div class="container">
-          
-  <div class="b-divider">
-    <img src="./assets/images/bg-1.jpg" class="vistaprevia img-banner" width="100%">
-</div>
-           
+          <div class="b-divider"></div>
           <h2 class="text-orange acme-regular titulo">¿Cómo aprenderas Histología?</h2>
           <p class="fs mb-6  text-center text-gray">
             Con <b class="acme-regular">Histology Plus</b> Aprender histología nunca fue tan fácil. Con módulos
@@ -225,49 +218,65 @@
         </div>
       </section>
 
-      <!-- Protección de la Información -->
-      <section class="mb-5">
-        <h2 class="text-orange">Protección de la Información</h2>
-        <p class="text-gray">
-          Tomamos medidas de seguridad adecuadas para proteger su información
-          personal contra accesos no autorizados o divulgación.
-        </p>
-      </section>
+      <!-- Contact -->
+      <section id="contacto" class="panel">
+        <h2 class="text-orange acme-regular titulo">Contacto</h2>
+          
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+          <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start" data-aos="flip-right">
+              <form class="p-md-4 border rounded-3 bg-body-tertiary" id="frmContacto">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" name="nombre"
+                    required>
+                  <label for="nombre">Su nombre</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email"
+                    required>
+                  <label for="email">Su email</label>
+                </div>
 
-      <!-- Derechos de los Usuarios -->
-      <section class="mb-5">
-        <h2 class="text-orange">Derechos de los Usuarios</h2>
-        <ul class="text-gray">
-          <li>
-            Derecho a acceder, rectificar o eliminar sus datos personales.
-          </li>
-          <li>
-            Derecho a restringir o oponerse al procesamiento de sus datos.
-          </li>
-          <li>Derecho a la portabilidad de sus datos.</li>
-        </ul>
-      </section>
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="mensaje" placeholder="Escribe un mensaje" name="mensaje" rows="5"
+                    style="height:100%;" cols="50"></textarea>
+                  <label for="mensaje">Escriba un mensaje</label>
+                </div>
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" name="contactame" value="1"> Quiero que me contacten
+                  </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary bg-burgundy" type="submit">Enviar</button>
+                <hr class="my-4">
+                <small class="text-small">Al hacer click, usted acepta los términos de uso.</small>
+              </form>
 
-<section class="mb-5" id="contacto">
-  <h2 class="text-orange">Contacto</h2>
-  <div class="row">
-    <div class="col-md-6">
-      <form id="contactForm" class="mb-3">
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Tu mensaje:</label>
-          <textarea class="form-control" id="mensaje" rows="3">Cuanto cuesta?</textarea>
+
+            </div>
+            <div class="col-8 mx-auto col-lg-5" data-aos="fade-up">
+             <p class="col-lg-10 lead">
+
+                ¿Tienes alguna duda o sugerencia? Estamos a tu disposición para ofrecerte soluciones a medida y
+                asesorarte en temas ambientales. Queremos conocer tu opinión y colaborar contigo para alcanzar tus metas
+                ambientales. ¡Estaremos encantados de saber de ti!
+
+              </p>
+
+  
+
+            </div>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar correo</button>
-      </form>
-    </div>
-  </div>
-</section> 
+      </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray text-white py-3 text-center">
+      <div class="b-divider"></div>
+   
+  </main>
+     <!-- Footer -->
+     <footer class="bg-dark text-white py-3 text-center ">
       <p>&copy; 2024 Histology+. Todos los derechos reservados.</p>
     </footer>
-  </main>
   <!-- Bootstrap JS -->
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
