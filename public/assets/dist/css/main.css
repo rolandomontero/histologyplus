@@ -6,18 +6,11 @@
   font-weight: 400;
   font-style: normal;
 }
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-}
-
+ 
 @media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
-    top: 56px;
-    /* Height of navbar */
+    top: 0; /* Height of navbar */
     bottom: 0;
     left: 100%;
     width: 100%;
@@ -25,19 +18,17 @@
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: #7d466aff;
-    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    background-color: #040404aa;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
   }
   .offcanvas-collapse.open {
     visibility: visible;
     transform: translateX(-100%);
   }
 
-  .call-action {
-    max-width: 30%; height: auto;
-  }
-  
+
 }
+
 
 /* Colors */
 .bg-burgundy {
@@ -50,6 +41,10 @@
 
 .bg-cream {
   background-color: #fff0de;
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 .text-orange {
@@ -79,8 +74,15 @@ header img {
 
 .b-divider {
   width: 100%;
-  height: 8rem;
+  height: 6rem;
 }
+
+.img-banner {
+    height: 4rem;  /* Puedes ajustar esta altura según necesites */
+    object-fit: cover;
+    object-position: center;  /* Controla qué parte de la imagen se muestra */
+}
+
 .content-section {
   margin-top: 8rem; /* Ajusta este valor según la altura de tu navbar */
 }
@@ -116,10 +118,10 @@ header img {
   font-size: 2.5rem;
   color: #7d466aff;
 }
+
  .vistaprevia {
-  background-color: #f1f1f1;
+ /* background-color: #f1f1f1; */
   border-radius: 12px;
-  
   margin-bottom: 2rem;}
 
 .nav-link {
