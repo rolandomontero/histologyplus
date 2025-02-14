@@ -1,262 +1,278 @@
 <!DOCTYPE html>
 <html lang="es-ES" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Histology Plus" />
-    <meta
-      property="og:description"
-      content="Una App para estudiar Histología."
-    />
-    <meta property="og:url" content="https://histologyplus.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/brand/logo-432.png" />
-    <meta property="og:site_name" content="Wampus Club" />
-    <link href="assets/brand/logo-432.png" type="image/png" rel="icon" />
-    <link
-      rel="shortcut icon"
-      href="./favicon.ico"
-      type="image/vnd.microsoft.icon"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Histology Plus" />
+  <meta property="og:description" content="Una App para estudiar Histología." />
+  <meta property="og:url" content="https://histologyplus.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://histologyplus.com/assets/brand/logo-432.png" />
+  <meta property="og:site_name" content="Wampus Club" />
+  <link href="https://histologyplus.com/assets/brand/logo-432.png" type="image/png" rel="icon" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/vnd.microsoft.icon" />
 
-    <title>Histology Plus</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/dist/css/main.css" />
-  </head>
-  <body>
-    <!-- Botón flotante -->
-    <button id="btnTop" class="btn btn-light"><i class="bi bi-caret-up-fill"></i></button>
-    <!-- Header -->
-    <header>
-      <nav
-        class="navbar navbar-expand-lg fixed-top bg-burgundy"
-        aria-label="Main navigation"
-      >
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler p-0 border-0 bi bi-list fs-1"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navHistology"
-            id="navbarSideCollapse"
-            aria-label="Toggle navigation"
-          ></button>
-          <a class="navbar-brand acme-regular inicio" href="#">
-            <img
-              src="./assets/brand/eicon.png"
-              alt="Ícono de Histología"
-              class="me-3"
-              width="48"
-              height="48"
-            />
-            Histology Plus
-          </a>
-          <div
-            class="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1"
-            id="navHistology"
-            aria-labelledby="offcanvasNavbar2Label"
-          >
-            <div class="offcanvas-header">
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#informacion">Información</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="privacidad.html">Privacidad</a>
-                </li>
-              </ul>
-              <ul class="list-unstyled d-flex justify-content-end">
-                <li class="ms-3">
-                  <a class="link-body-emphasis" href="#">
-                    <i class="bi bi-whatsapp fs-4"></i>
-                  </a>
-                </li>
-                <li class="ms-3">
-                  <a class="link-body-emphasis" href="#">
-                    <i class="bi bi-instagram fs-4"></i>
-                  </a>
-                </li>
-                <li class="ms-3">
-                  <a class="link-body-emphasis" href="#">
-                    <i class="bi bi-facebook fs-4"></i>
-                  </a>
-                </li>
-                <li class="ms-3">
-                  <a class="link-body-emphasis" href="#">
-                    <i class="bi bi-cart fs-4"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+  <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/dist/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <title>Histology Plus</title> 
+  
+</head>
+
+<body>
+  <!-- Botón flotante -->
+  <button id="btnTop" class="btn btn-light"><i class="bi bi-caret-up-fill"></i></button>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-burgundy" aria-label="Main navigation">
+      <div class="container-fluid">
+        <button class="navbar-toggler p-0 border-0 bi bi-list fs-1" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navHistology" id="navbarSideCollapse" aria-label="Toggle navigation"></button>
+        <a class="navbar-brand acme-regular inicio" href="#">
+          <img src="./assets/brand/eicon.png" alt="Ícono de Histología" class="me-3" width="48" height="48" />
+          Histology Plus
+        </a>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="navHistology"
+          aria-labelledby="offcanvasNavbar2Label">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#hero">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#wcd">¿Qué hacemos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="privacidad.html">Privacidad</a>
+              </li>
+            </ul>
+            <ul class="list-unstyled d-flex justify-content-end">
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#">
+                  <i class="bi bi-whatsapp fs-4"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#">
+                  <i class="bi bi-instagram fs-4"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#">
+                  <i class="bi bi-facebook fs-4"></i>
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="link-body-emphasis" href="#">
+                  <i class="bi bi-cart fs-4"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main class="bg-cream">
-      <!-- Información General -->
-      <section class="mb-5 info">
-        <div class="container col-xxl-8 px-4 py-5">
-          <div class="row flex-lg-row align-items-center g-5 py-5">
-            <div class="col-lg-6" data-aos="fade-right">
-              <h1 class="display-3 inicio acme-regular">
-                Aprende del mundo de las células
-              </h1>
-              <p class="lead">
-                <b class="acme-regular display-6">Histology Plus</b>, te ayuda a
-                comprender en un sorprendente viaje hacia el mundo microscópico
-                de los téjidos histológicos.
-              </p>
+  <!-- Main Content -->
+  <main class="bg-cream">
+    <!-- Call  to Actions -->
+    <section class="mb-5 info">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h1 class="display-3 inicio acme-regular">
+              Descubre el mundo microscópico
+            </h1>
+            <p class="lead">Con
+              <b class="acme-regular display-6">Histology Plus</b>, explora los tejidos histológicos con imágenes de
+              alta calidad e interactividad.
+            </p>
+            <p class="lead">
+              Descarga la aplicación y comienza a estudiar hoy mismo.
+            </p>
 
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a
-                  href="https://play.google.com/store/apps/details?id=cl.mclautaro.histology"
-                  class="btn btn-light btn-lg px-4 me-md-2"
-                  ><i class="bi bi-google-play me-md-2 text-dark"></i> Google
-                  Play</a
-                >
-                <a
-                  href="https://apps.apple.com/cl/app/histology-plus/id6739782209"
-                  class="btn btn-light btn-lg px-4"
-                >
-                  <i class="bi bi-apple me-md-2 text-dark"></i>
-                  Apple Store</a
-                >
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="https://play.google.com/store/apps/details?id=cl.mclautaro.histology"
+                class="btn btn-light btn-lg px-4 me-md-2"><i class="bi bi-google-play me-md-2 text-dark"></i> Google
+                Play</a>
+              <a href="https://apps.apple.com/cl/app/histology-plus/id6739782209" class="btn btn-light btn-lg px-4">
+                <i class="bi bi-apple me-md-2 text-dark"></i>
+                Apple Store</a>
+            </div>
+          </div>
+          <div class="col-3 col-sm-8 col-lg-6 d-flex justify-content-center" data-aos="fade-up">
+            <img id="imgHistology" src="assets/images/iPhone02.png" class="d-block mx-lg-auto img-fluid"
+              alt="Histology Plus" />
+          </div>
+        </div>
+      </div>
+      <h2 class="text-orange"></h2>
+      <div class="b-divider"></div>
+    </section>
+
+    <div class="container">
+      <!-- Hero -->
+      <section class="mb-5" id="hero">
+        <h2 class="text-orange"></h2>
+        <div class="container">
+          <div class="b-divider"></div>
+          <h2 class="text-orange acme-regular titulo">
+
+            Aprende Histología de manera intuitiva y visual</h2>
+          <div class="container col-xxl-8 px-4 py-5 col-10">
+            <div class="row flex-lg-row align-items-center g-1">
+              <div class="col-3 col-sm-8 col-lg-6 d-flex justify-content-center" data-aos="fade-up">
+                <img src="assets/images/iPhone03.png" class="d-block mx-lg-auto img-fluid" alt="Histology Plus"
+                  loading="lazy" width="80%" height="80%" />
+              </div>
+              <div class="col-lg-6">
+
+                <p class="text-gray">
+                  Con <span class="acme-regular">Histology Plus</span>, obtendrás acceso a una experiencia de
+                  aprendizaje interactiva, gráficos de progreso y módulos diseñados para mejorar tu comprensión de los
+                  tejidos humanos.</p>
+                <p class="text-gray">
+                  Descubre el futuro del aprendizaje en histología con imágenes de alta calidad, módulos interactivos y
+                  un chat de IA que responde tus dudas en tiempo real. </p>
+              </div>
+
+            </div>
+          </div>
+      </section>
+
+      <!-- ¿Qué ofrecemos? -->
+      <section class="mb-5" id="wcd">
+        <h2 class="text-orange"></h2>
+        <div class="container">
+          <div class="b-divider"></div>
+          <h2 class="text-orange acme-regular titulo">
+
+            ¿Cómo aprenderas Histología?</h2>
+          <p class="fs mb-6  text-center text-gray">
+            Con <b class="acme-regular">Histology Plus</b> Aprender histología nunca fue tan fácil. Con módulos
+            interactivos, un chat de inteligencia artificial y un sistema de seguimiento de progreso, nuestra app te
+            ofrece una experiencia de aprendizaje completa y personalizada.
+
+            Ya seas estudiante o profesional de la salud, Histology Plus te brinda las herramientas necesarias para
+            comprender los tejidos del cuerpo humano con claridad y precisión.
+
+            Descubre cómo cada función te acerca al dominio de la histología
+            <br />
+          </p>
+          <p class="lead"> <br /></p>
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div data-aos="flip-right" class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <i class="bi bi-chat" style="font-size: 3rem; color: #7d466aff;"></i>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title h3">Resuelve tus dudas en tiempo real</h1>
+                  <p class="mt-3 mb-4">
+                    No estudies solo. Nuestro asistente de inteligencia artificial te ayuda a responder preguntas,
+                    aclarar conceptos y reforzar tu comprensión de manera inmediata.
+                  </p>
+                  <img src="./assets/images/chatia.png" alt="" class="vistaprevia" width="80%">
+                </div>
               </div>
             </div>
-            <div
-              class="col-10 col-sm-8 col-lg-6 d-flex justify-content-center"
-              data-aos="fade-up"
-            >
-              <img
-                src="assets/images/iPhone02.png"
-                class="d-block mx-lg-auto img-fluid"
-                alt="Histology Plus"
-                loading="lazy"
-                width="60%"
-                height="60%"
-              />
+            <div class="col">
+              <div data-aos="zoom-in" class="card mb-4 rounded-3">
+                <div class="card-header py-3">
+                  <i class="bi  bi-journal-bookmark-fill" style="font-size: 3rem; color: #7d466aff;"></i>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title h3">Explora con Imágenes y Módulos</h1>
+                  <p class="mt-3 mb-4">
+                    Sumérgete en el mundo de la histología con imágenes de alta resolución y módulos interactivos que
+                    facilitan el aprendizaje. Comprende cada tejido con ejemplos visuales y descripciones detalladas.
+                  </p>
+                  <img src="./assets/images/clase.png" alt="" class="vistaprevia" width="80%">
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div data-aos="flip-left" class="card mb-4 rounded-3">
+                <div class="card-header py-3">
+                  <i class="bi bi-graph-up" style="font-size: 3rem; color: #7d466aff;"></i>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title h3 ">Mide y mejora tu aprendizaje</h1>
+                  <p class="mt-3 mb-4">
+                    Lleva un registro de tus avances con estadísticas personalizadas, seguimiento de lecciones
+                    completadas y objetivos de estudio para optimizar tu aprendizaje.
+                  </p>
+                  <img src="./assets/images/progreso.png" alt="" class="vistaprevia" width="80%">
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="container">
-        <!-- Información que Recopilamos -->
-        <section class="mb-5 panel" id="información">
-          <h2 class="text-orange titulo">Información que Recopilamos</h2>
-          <ul class="text-gray">
-            <li>
-              Información personal proporcionada por el usuario, como nombre y
-              correo electrónico.
-            </li>
-            <li>
-              Información técnica sobre el dispositivo utilizado para acceder a
-              la aplicación.
-            </li>
-            <li>
-              Datos de actividad dentro de la aplicación para mejorar la
-              experiencia del usuario.
-            </li>
-          </ul>
-        </section>
 
-        <!-- Uso de la Información -->
-        <section class="mb-5 panel" id="contacto">
-          <h2 class="text-orange">Uso de la Información</h2>
-          <p class="text-gray">
-            Utilizamos la información recopilada para mejorar nuestros
-            servicios, personalizar la experiencia del usuario y proporcionar
-            soporte técnico cuando sea necesario.
-          </p>
-        </section>
+      <!-- Protección de la Información -->
+      <section class="mb-5">
+        <h2 class="text-orange">Protección de la Información</h2>
+        <p class="text-gray">
+          Tomamos medidas de seguridad adecuadas para proteger su información
+          personal contra accesos no autorizados o divulgación.
+        </p>
+      </section>
 
-        <!-- Protección de la Información -->
-        <section class="mb-5">
-          <h2 class="text-orange">Protección de la Información</h2>
-          <p class="text-gray">
-            Tomamos medidas de seguridad adecuadas para proteger su información
-            personal contra accesos no autorizados o divulgación.
-          </p>
-        </section>
+      <!-- Derechos de los Usuarios -->
+      <section class="mb-5">
+        <h2 class="text-orange">Derechos de los Usuarios</h2>
+        <ul class="text-gray">
+          <li>
+            Derecho a acceder, rectificar o eliminar sus datos personales.
+          </li>
+          <li>
+            Derecho a restringir o oponerse al procesamiento de sus datos.
+          </li>
+          <li>Derecho a la portabilidad de sus datos.</li>
+        </ul>
+      </section>
 
-        <!-- Derechos de los Usuarios -->
-        <section class="mb-5">
-          <h2 class="text-orange">Derechos de los Usuarios</h2>
-          <ul class="text-gray">
-            <li>
-              Derecho a acceder, rectificar o eliminar sus datos personales.
-            </li>
-            <li>
-              Derecho a restringir o oponerse al procesamiento de sus datos.
-            </li>
-            <li>Derecho a la portabilidad de sus datos.</li>
-          </ul>
-        </section>
+      <!-- Contacto -->
+      <section class="mb-5">
+        <h2 class="text-orange">Contacto</h2>
+        <p class="text-gray">
+          Si tiene alguna pregunta sobre nuestra política de privacidad, puede
+          contactarnos a través de
+          <a href="mailto:info@histologyplus.com" class="link-body-emphasis">info@histologyplus.com</a>.
+        </p>
+      </section>
+    </div>
 
-        <!-- Contacto -->
-        <section class="mb-5">
-          <h2 class="text-orange">Contacto</h2>
-          <p class="text-gray">
-            Si tiene alguna pregunta sobre nuestra política de privacidad, puede
-            contactarnos a través de
-            <a href="mailto:info@histologyplus.com" class="link-body-emphasis"
-              >info@histologyplus.com</a
-            >.
-          </p>
-        </section>
-      </div>
+    <!-- Footer -->
+    <footer class="bg-gray text-white py-3 text-center">
+      <p>&copy; 2024 Histology+. Todos los derechos reservados.</p>
+    </footer>
+  </main>
+  <!-- Bootstrap JS -->
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="assets/dist/js/main.js"></script>
+  <script>
+    AOS.init({
+      easing: "ease-out-back",
+      duration: 3000,
+    });
+  </script>
 
-      <!-- Footer -->
-      <footer class="bg-gray text-white py-3 text-center">
-        <p>&copy; 2024 Histology+. Todos los derechos reservados.</p>
-      </footer>
-    </main>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/dist/js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
 
-    <script>
-      AOS.init({
-        easing: "ease-out-back",
-        duration: 3000,
-      });
-    </script>
-    <script>
-      window.onload = function () {
-        window.scrollTo(0, 0);
-      };
-    </script>
-  </body>
 </html>

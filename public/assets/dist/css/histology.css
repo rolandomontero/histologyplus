@@ -66,6 +66,10 @@
      vertical-align: -.125em;
      fill: currentColor;
  }
+
+ .vista {
+  border-radius: 10px;
+ }
  
  .nav-scroller {
      position: relative;
