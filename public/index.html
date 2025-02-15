@@ -125,6 +125,7 @@
     <div class="container">
       <!-- Hero -->
       <section class="mb-5" id="hero">
+        <div class="b-divider"></div>
         <div class="container">
           <div class="b-divider"></div>
           <h2 class="text-orange acme-regular titulo">
@@ -134,7 +135,6 @@
               <div class="col-12 col-sm-12 col-lg-5 d-flex justify-content-center" data-aos="fade-up">
                 <img id="imgAprende" class="d-block mx-lg-auto img-fluid vistaprevia" alt="Aprende Histology Plus" />
               </div>
-
               <div class="col-lg-6 px-6">
 
                 <p class="text-gray">
@@ -151,7 +151,7 @@
       </section>
 
       <!-- ¿Qué ofrecemos? -->
-      <section class="mb-5 panel" id="wcd">       
+      <section class="mb-5 panel" id="wcd">
         <div class="container">
           <div class="b-divider"></div>
           <h2 class="text-orange acme-regular titulo">¿Cómo aprenderas Histología?</h2>
@@ -217,66 +217,130 @@
           </div>
         </div>
       </section>
+    </div>
 
+    <section class="mb-5 bg-dark">
+      <div class="b-divider"></div>
+      <h2 class="text-orange acme-regular display-4 px-4">Portafolio</h2>
+      <p class="px-5 lead">Explora cómo Histology Plus potencia el aprendizaje y la práctica profesional</p>
+      <div class="container   px-4 py-5">
+        
+
+
+          <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+              <img class="d-block mx-lg-auto img-fluid vistaprevia img-banner" src="./assets/images/1233b365-df4e-4c00-90bf-67dc844befcd.png" alt="">
+                <div class="container">
+                  <div class="carousel-caption text-start  rounded-3 bg-dark mb-5 opacity-75 px-5">
+                    <h1>Para estudiantes</h1>
+                    <p>Refuerza tu aprendizaje y prepárate para exámenes de histología.</p>                    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+            <img class="d-block mx-lg-auto img-fluid vistaprevia img-banner" src="./assets/images/dc2b9795-6532-4518-b732-15ba05bd4d5d.png" alt="">
+            <div class="container">
+                  <div class="carousel-caption rounded-3 bg-dark mb-5 opacity-75">
+                    <h1>Para profesionales</h1>
+                    <p>Accede a un recurso de consulta rápida y visual.</p>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+              <img class="d-block mx-lg-auto img-fluid vistaprevia img-banner" src="./assets/images/fd64d986-c364-4210-8d86-d5e9dac6c94c.png" alt="">
+              <div class="container">
+                  <div class="carousel-caption  rounded-3 bg-dark mb-5 opacity-75">
+                    <h1>Para docentes</h1>
+                    <p>Utiliza la app como herramienta de enseñanza interactiva.</p>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+        </div>
+      </div>
+
+    </section>
+
+
+    <div class="container">
       <!-- Contact -->
       <section id="contacto" class="panel">
-        <h2 class="text-orange acme-regular titulo">Contacto</h2>
-          
-        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-          <div class="row align-items-center g-lg-5 py-5">
-            <div class="col-lg-7 text-center text-lg-start" data-aos="flip-right">
-              <form class="p-md-4 border rounded-3 bg-body-tertiary" id="frmContacto">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" name="nombre"
-                    required>
-                  <label for="nombre">Su nombre</label>
+        <div class="container">
+          <div class="b-divider"></div>
+          <h2 class="text-orange acme-regular titulo text-center mb-5">Contacto</h2>
+          <div class="row align-items-center justify-content-between g-5">
+            <div class="col-lg-7" data-aos="flip-right">
+              <div class="card shadow-sm">
+                <div class="card-header bg-burgundy text-white py-3">
+                  <h3 class="text-center mb-0">Formulario de Consulta</h3>
                 </div>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email"
-                    required>
-                  <label for="email">Su email</label>
+                <div class="card-body p-4 p-md-5">
+                  <form id="frmContacto">
+                    <div class="form-floating mb-4">
+                      <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" name="nombre"
+                        required>
+                      <label for="nombre">Su nombre</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                      <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email"
+                        required>
+                      <label for="email">Su email</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                      <textarea class="form-control" id="mensaje" placeholder="Escribe un mensaje" name="mensaje"
+                        style="height: 120px"></textarea>
+                      <label for="mensaje">Escriba un mensaje</label>
+                    </div>
+                    <div class="form-check mb-4">
+                      <input type="checkbox" class="form-check-input" id="contactame" name="contactame" value="1">
+                      <label class="form-check-label" for="contactame">Quiero que me contacten</label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary bg-burgundy mb-3" type="submit">Enviar</button>
+                    <div class="text-center">
+                      <small class="text-muted">Al hacer click, usted acepta los términos de uso.</small>
+                    </div>
+                  </form>
                 </div>
-
-                <div class="form-floating mb-3">
-                  <textarea class="form-control" id="mensaje" placeholder="Escribe un mensaje" name="mensaje" rows="5"
-                    style="height:100%;" cols="50"></textarea>
-                  <label for="mensaje">Escriba un mensaje</label>
-                </div>
-                <div class="checkbox mb-3">
-                  <label>
-                    <input type="checkbox" name="contactame" value="1"> Quiero que me contacten
-                  </label>
-                </div>
-                <button class="w-100 btn btn-lg btn-primary bg-burgundy" type="submit">Enviar</button>
-                <hr class="my-4">
-                <small class="text-small">Al hacer click, usted acepta los términos de uso.</small>
-              </form>
-
-
+              </div>
             </div>
-            <div class="col-8 mx-auto col-lg-5" data-aos="fade-up">
-             <p class="col-lg-10 lead">
-
-                ¿Tienes alguna duda o sugerencia? Estamos a tu disposición para ofrecerte soluciones a medida y
-                asesorarte en temas ambientales. Queremos conocer tu opinión y colaborar contigo para alcanzar tus metas
-                ambientales. ¡Estaremos encantados de saber de ti!
-
-              </p>
-
-  
-
+            <div class="col-lg-4" data-aos="fade-up">
+              <div class="p-4 rounded-3">
+                <p class="lead mb-0">
+                  ¿Tienes alguna duda o sugerencia? Estamos a tu disposición para
+                  ofrecerte soluciones a medida. Queremos conocer tu opinión y colaborar contigo para alcanzar tus
+                  metas de aprendizaje. ¡Estaremos encantados de saber de ti!
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+    </div>
+    <div class="b-divider"></div>
 
-      <div class="b-divider"></div>
-   
   </main>
-     <!-- Footer -->
-     <footer class="bg-dark text-white py-3 text-center ">
-      <p>&copy; 2024 Histology+. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3 text-center ">
+    <p>&copy; 2024 Histology+. Todos los derechos reservados.</p>
+  </footer>
   <!-- Bootstrap JS -->
   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

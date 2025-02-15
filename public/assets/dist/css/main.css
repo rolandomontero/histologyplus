@@ -49,11 +49,6 @@
   color: #c2803c;
 }
 
-.text-orange {
-  color: #c2803c;
-}
-
-
 .text-gray {
   color: #000000;
   font-family: Montserrat;
@@ -80,14 +75,15 @@ header img {
 .b-divider {
   width: 100%;
   height: 5rem;
-}
+} 
 
 .img-banner {
-    height: 4rem;  /* Puedes ajustar esta altura según necesites */
-    object-fit: cover;
-    object-position: center;  /* Controla qué parte de la imagen se muestra */
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-
+ 
 .content-section {
   margin-top: 2rem; /* Ajusta este valor según la altura de tu navbar */
 }
@@ -162,6 +158,16 @@ nav {
   background-size: cover, contain;
   height: 100vh;
 }
+
+
+.info {
+  background-position: top center, bottom center;
+  background-attachment: fixed, fixed;
+  background: url("../../images/backgrouds1.png");
+  background-size: cover, contain;
+  height: 100vh;
+}
+
 
 #btnTop {
   width: 50px;
