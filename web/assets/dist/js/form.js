@@ -27,7 +27,7 @@ $(document).ready(function () {
       url: 'API/contenido.php',
       type: 'GET',
       success: function (data) {
-        alert(data);
+        //alert(data);
         $('#chapterTableBody').empty();
         $.each(data, function (index, chapter) {
           $('#chapterTableBody').append(`
@@ -61,7 +61,7 @@ $(document).ready(function () {
   // Add Chapter to API
   function addChapter() {
     var formData = $('#addChapterForm').serialize();
-    alert(formData);
+   // alert(formData);
     $.ajax({
       url: 'API/contenido.php',
       type: 'POST',
@@ -150,9 +150,9 @@ $(document).ready(function () {
     const nombre = document.getElementById('nombre').value;
     const contactameChecked = document.getElementById('contactame').checked;
     const contactame = contactameChecked ? 'Pronto nos pondremos en contacto con usted.' : '';
-
+    const contactar = contactameChecked? 'Sí' : 'No';
     event.preventDefault();
-    const formData = $(this).serialize();
+    const formData = $(this).serialize() + '&contactar=' + contactar;
 
     $.ajax({
       type: "POST",
