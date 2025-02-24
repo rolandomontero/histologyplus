@@ -9,7 +9,6 @@ window.addEventListener("scroll", function () {
     btnTop.style.display = "block";
     btnTop.style.transition =
       "transform 1s ease-in-out, visibility 1s ease-in-out";
-    // transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
   } else {
     btnTop.style.display = "none";
   }

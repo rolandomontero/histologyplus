@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="assets/dist/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/dist/js/form.js"></script>
+  <script src="flutter.js" defer></script>
 
   <title>Histology Plus</title>
 
@@ -300,7 +303,7 @@
                   <h3 class="text-center mb-0">Formulario de Consulta</h3>
                 </div>
                 <div class="card-body p-4 p-md-5">
-                  <form id="frmContacto">
+                  <form id="frmContacto" method="post">
                     <div class="form-floating mb-4">
                       <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" name="nombre"
                         required>
@@ -344,6 +347,21 @@
     <div class="b-divider"></div>
 
   </main>
+  <!-- Modal -->
+  <div class="modal fade" id="messageModal" tabindex="-1" 
+       aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-body text-center" id="TextVal">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="bg-dark text-white py-3 text-center ">
     <p>&copy; 2024 Histology+. Todos los derechos reservados.</p>
@@ -360,6 +378,7 @@
     });
   </script>
   <script>
+    { { flutter_service_worker_version } }
     window.addEventListener("load", function (ev) {
       _flutter.loader.loadEntrypoint({
         onEntrypointLoaded: function (engineInitializer) {
